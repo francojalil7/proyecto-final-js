@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Bebas Neue', cursive; }
+
+.imgProductos {
+  max-width: 30vh;
+  margin: 15px; }
+  .imgProductos:hover {
+    transform: scale(1.11);
+    transition-property: all;
+    transition-duration: 1s; }
+
+.divProductos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px; }
+  .divProductos h5 {
+    margin: 5px;
+    font-size: 23px; }
+  .divProductos p {
+    font-size: 20px;
+    margin: 5px;
+    text-align: center; }
+  .divProductos button {
+    font-size: 3vh;
+    padding: 5px; }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: bisque;
+  align-items: center; }
+
+.seccion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px; }
+  .seccion ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .seccion ul li {
+      margin: 10px;
+      list-style: none;
+      display: flex;
+      align-items: center; }
+      .seccion ul li img {
+        padding: 5px;
+        margin: 5px; }
+      .seccion ul li a {
+        text-decoration: none;
+        color: black;
+        display: flex;
+        align-items: center; }
