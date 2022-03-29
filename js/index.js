@@ -5,7 +5,6 @@ class Producto{
         this.descripcion = descripcion;
         this.precio = precio;
     }
-
 }
 let productos = [];
 
@@ -70,22 +69,38 @@ function cargarProducto(productos) {
                     new Producto("Pantalón", 38, "asda jdskga asfaduji iaSUDFAS", 1900),
                     new Producto("Pantalón", 44, "asda afas gafa asgfasfas", 2400)];
 
-
-
-let principal = document.querySelector('.vista')    
+                    
+let principal = document.querySelector('.vista')  
 principal.className = "divProductos"
-for (const producto of productos2) {
+
+function agregarProductos(productos){
+  for (const producto of productos2) {
     let nuevoProducto = document.createElement('div');
     nuevoProducto.innerHTML =`<img src="./img/pantalon3.jpeg" alt="pantalon 4" class="imgProductos"/>
                               <div class="divProductos">
                               <h5>${producto.nombre}</h5>
                               <p>${producto.descripcion}</p>
                               <p>${producto.precio}</p>
+                              <div class="divButton">
+                                <button><a>COMPRAR</a></button>
+                                <button class="buttonInfo"><a>Más info</a></button>
+                              </div>
                               </div>
                               `;
-    principal.appendChild(nuevoProducto)                          
-    principal.append()
-}        
+    principal.appendChild(nuevoProducto)     
+    console.log("agrego")     
+} 
+}
+
+let buton = document.querySelector('.buttonProductos')
+buton.addEventListener('click', agregarProductos(productos2))
+console.log(buton)
+
+
+
+
+
+
 
   alert("GRACIAS POR SU VISITA")
 

@@ -4,6 +4,7 @@
     box-sizing: border-box ;
     font-family: 'Bebas Neue', cursive;
 }
+
 .imgProductos{
     max-width: 30vh;
     margin: 15px;
@@ -30,5 +31,30 @@
     button{
         font-size: 3vh;
         padding: 5px;
+        display: block;
+        &:hover{
+            background-color: #008CBA;
+            color: white;
+        }
+    }
+    .divButton{
+        display: flex;
+        flex-direction: row;
+        button{
+            margin: 10px;
+        }
+    }
+    .buttonInfo{
+        font-size: 20px;
+        padding: 10px;
+    }
+    .buttonProductos{
+        background-color: rgb(219, 167, 103);
+        color: white;
+        padding: 25px;
+        margin: 20px;
+        &:hover{
+            background-color: rgb(224, 139, 36);
+        }
     }
 }

@@ -26,7 +26,26 @@
     text-align: center; }
   .divProductos button {
     font-size: 3vh;
-    padding: 5px; }
+    padding: 5px;
+    display: block; }
+    .divProductos button:hover {
+      background-color: #008CBA;
+      color: white; }
+  .divProductos .divButton {
+    display: flex;
+    flex-direction: row; }
+    .divProductos .divButton button {
+      margin: 10px; }
+  .divProductos .buttonInfo {
+    font-size: 20px;
+    padding: 10px; }
+  .divProductos .buttonProductos {
+    background-color: #dba767;
+    color: white;
+    padding: 25px;
+    margin: 20px; }
+    .divProductos .buttonProductos:hover {
+      background-color: #e08b24; }
 
 .footer {
   display: flex;
