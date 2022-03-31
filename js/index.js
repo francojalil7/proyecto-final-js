@@ -1,9 +1,10 @@
 class Producto{
-    constructor(nombre, talle, descripcion, precio){
+    constructor(nombre, talle, descripcion, precio, img){
         this.nombre = nombre;
         this.talle = talle;
         this.descripcion = descripcion;
         this.precio = precio;
+        this.img = img;
     }
 }
 let productos = [];
@@ -64,19 +65,23 @@ function cargarProducto(productos) {
 
 //agregando manejo de DOM
 
-  let productos2 = [new Producto("Pantalón","42", "lorem sadffsa afsfas adsada", 2000),
-                    new Producto("Pantalón","41", "Jean común estampato", 2100),
-                    new Producto("Pantalón", 38, "asda jdskga asfaduji iaSUDFAS", 1900),
-                    new Producto("Pantalón", 44, "asda afas gafa asgfasfas", 2400)];
+  let productos2 = [new Producto("Pantalón","42", "lorem sadffsa afsfas adsada", 2000, "./img/pantalon0.jpeg"),
+                    new Producto("Pantalón","41", "Jean común estampato", 2100, "./img/pantalon1.jpeg"),
+                    new Producto("Pantalón", 38, "asda jdskga asfaduji iaSUDFAS", 1900, "./img/pantalon2.jpeg"),
+                    new Producto("Pantalón", 44, "asda afas gafa asgfasfas", 2400, "./img/pantalon3.jpeg")];
 
                     
-let principal = document.querySelector('.vista')  
-principal.className = "divProductos"
 
-function agregarProductos(productos){
+
+function mostrarProductos(productos){
+  let principal = document.querySelector('.main')  
+  let divProductos = document.createElement('div')
+  divProductos.className = "main"
+  principal.appendChild(divProductos)
   for (const producto of productos2) {
     let nuevoProducto = document.createElement('div');
-    nuevoProducto.innerHTML =`<img src="./img/pantalon3.jpeg" alt="pantalon 4" class="imgProductos"/>
+    nuevoProducto.className = "divProductos"
+    nuevoProducto.innerHTML =`<img src="${producto.img}" alt="pantalon 4" class="imgProductos"/>
                               <div class="divProductos">
                               <h5>${producto.nombre}</h5>
                               <p>${producto.descripcion}</p>
@@ -87,21 +92,37 @@ function agregarProductos(productos){
                               </div>
                               </div>
                               `;
-    principal.appendChild(nuevoProducto)     
+    divProductos.appendChild(nuevoProducto)     
     console.log("agrego")     
-} 
+    } 
 }
 
 let buton = document.querySelector('.buttonProductos')
-buton.addEventListener('click', agregarProductos(productos2))
-console.log(buton)
+buton.addEventListener('click', (productos2) => {mostrarProductos(productos2)})
 
 
 
 
 
+function envioFormulario(){
+  let nombre = document.getElementById("name").value
+  let mail =  document.getElementById("mail").value
+  let telefono = document.getElementById("tel").value
+  let mensaje = document.getElementById("msg").value
+
+  if(){
+    
+  }
+  alert(`Hola ${nombre}, vamos a contactarnos con vos al mail ${mail} o tu número de teléfono ${telefono}`)
+  alert(`Tu mensaje fue:
+      ${mensaje}`)
+}
+
+let botonForm = document.getElementById('button-submit')
+
+botonForm.addEventListener('click', envioFormulario)
 
 
-  alert("GRACIAS POR SU VISITA")
+
 
 
