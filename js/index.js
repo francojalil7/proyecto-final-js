@@ -72,9 +72,10 @@ function cargarProducto(productos) {
 
                     
 
+//Boyón de mostrar productos
 
 function mostrarProductos(productos){
-  let principal = document.querySelector('.main')  
+  let principal = document.querySelector('.divProductos')  
   let divProductos = document.createElement('div')
   divProductos.className = "main"
   principal.appendChild(divProductos)
@@ -91,14 +92,27 @@ function mostrarProductos(productos){
                                 <button class="buttonInfo"><a>Más info</a></button>
                               </div>
                               </div>
+                              
                               `;
-    divProductos.appendChild(nuevoProducto)     
+    divProductos.appendChild(nuevoProducto)    
     console.log("agrego")     
-    } 
+  } 
+  let botonOcultar = document.createElement('button')
+  botonOcultar.className = 'botonOcultar'
+  botonOcultar.innerText = `Ocultar productos`
+  principal.appendChild(botonOcultar)
+}
+const boton = document.querySelector('.buttonProductos')
+boton.addEventListener('click', (productos2) => {mostrarProductos(productos2)})
+
+
+//Botón de ocultar productos
+const botonOcultar = document.querySelector('.botonOcultar')
+function ocultarProductos(){
+  for(){}
 }
 
-let buton = document.querySelector('.buttonProductos')
-buton.addEventListener('click', (productos2) => {mostrarProductos(productos2)})
+
 
 
 
@@ -109,20 +123,12 @@ function envioFormulario(){
   let mail =  document.getElementById("mail").value
   let telefono = document.getElementById("tel").value
   let mensaje = document.getElementById("msg").value
-
-  if(){
-    
-  }
-  alert(`Hola ${nombre}, vamos a contactarnos con vos al mail ${mail} o tu número de teléfono ${telefono}`)
+  alert(`Hola ${nombre}, vamos a contactarnos con vos al mail ${mail} o tu número de tel`)
   alert(`Tu mensaje fue:
-      ${mensaje}`)
+    ${mensaje}`)
 }
-
-let botonForm = document.getElementById('button-submit')
-
-botonForm.addEventListener('click', envioFormulario)
-
-
+const buttonForm = document.querySelector('#button-submit')
+buttonForm.addEventListener('click', envioFormulario)
 
 
 

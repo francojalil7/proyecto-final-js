@@ -11,21 +11,20 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
-<body>
-    
+<body >
     <header class="header">
-        <nav class="NavBar">
-            <h1>OESTE RETRO</h1>
-            <ul>
-                <li>INICIO</li>
-                <li>NOSOTROS</li>
-                <li>PRODUCTOS</li>
-                <li>CONTACTO</li>
-                <li>POLÍTICA DE CAMBIO/DEVOLUCIÓN</li>
-            </ul>
-        </nav>
+            <nav class="NavBar">
+                <h1>OESTE RETRO</h1>
+                <ul>
+                    <li>INICIO</li>
+                    <li>NOSOTROS</li>
+                    <li><a href="#productos">PRODUCTOS</a></li>
+                    <li><a href="#devolucion">POLÍTICA DE CAMBIO/DEVOLUCIÓN</a> </li>
+                    <li><a href="#form">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <hr>
     </header>
-    
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -64,56 +63,72 @@
             <span class="visually-hidden">Next</span>
         </button>
         </div>
-        
-        <main class="main">
-        <div class="vista">
-            <button class="buttonProductos">MIRA NUESTROS PRODUCTOS</button>
-            
-        </div>
-
-    </main>
-    <form action="" id="form" class="form">
-        <h1>Contactanos</h1>
-        <p class="textContact">Si tenés dudas podés comunicarte con nosotros y te contactaremos a la brevedad!
-        </p>
-        <div class="mainContact">
-            <div class="input1">
-                <input type="text" name="name" id="name" placeholder="Ingresa tu nombre" class="input-contact">
-                <div class="alert erName"></div>
-                <input type="email" name="mail" id="mail" placeholder="Ingresa tu mail" class="input-contact">
-                <div class="alert erEmail"></div>
-                <input type="number" name="tel" id="tel" placeholder="Ingresa tu teléfono"
-                    class="input-contact">
-                <div class="alert erTel"></div>
-            </div>
-            <div class="input2">
-                <label>Dejanos tu mensaje!</label>
-                <input type="text" name="msg" id="msg" placeholder="Deja tu mensaje" class="input-submit">
-                <div class="alert erMsg"></div>
-                <div class="submit-div">
-                <input type="submit" name="button-submit" id="button-submit" class="button-submit">
+    <div class="main">
+        <div class="divProductos">
+                    <button id="productos" class="buttonProductos">MIRA NUESTROS PRODUCTOS</button>
                 </div>
-            </div>
-        </div>
+                
+                
+
+                <div id="devolucion" class="devolucion">
+                    <h2>POLÍTICAS DE CAMBIO / DEVOLUCIÓN</h2>
+                    <p>Todas nuestras prendas tienen cambio excepto las que figuran en SALE o DESCUENTO. Recorda traerlas al local o enviarlas en perfecto estado, sin uso, y con etiqueta. No nos hacemos cargo sobre las prendas que hayan sido manipuladas, es decir, lavadas, intervenidas, etc.</p>
+                    <p>Para realizar el cambio dirigete a nuestro local en Isidro Casanova.</p>
+                    <p>Si necesitas que realicemos el cambio mediante envío, escribinos al 1158735738 para coordinar, los costos de envio corren por cuenta del comprador.</p>
+                </div>
+            
+            <form action="" id="form" class="form">
+                <h1>Contactanos</h1>
+                <p class="textContact">Si tenés dudas podés comunicarte con nosotros y te contactaremos a la brevedad!
+                </p>
+                <div class="mainContact">
+                    <div class="input1">
+                        <input type="text" name="name" id="name" placeholder="Ingresa tu nombre" class="input-contact">
+                        <div class="alert erName"></div>
+                        <input type="email" name="mail" id="mail" placeholder="Ingresa tu mail" class="input-contact">
+                        <div class="alert erEmail"></div>
+                        <input type="number" name="tel" id="tel" placeholder="Ingresa tu teléfono"
+                            class="input-contact">
+                        <div class="alert erTel"></div>
+                    </div>
+                    <div class="input2">
+                        <label>Dejanos tu mensaje!</label>
+                        <input type="text" name="msg" id="msg" placeholder="Deja tu mensaje" class="input-submit">
+                        <div class="alert erMsg"></div>
+                        <div class="submit-div">
+                        <input type="submit" name="button-submit" id="button-submit" class="button-submit">
+                        </div>
+                    </div>
+                </div>
+                </form>
+            <hr>
         
-    </form>
-    <footer class="footer">
-        <div class="seccion">
-            <ul>
-                <li>♻️ ROPA SUSTENTABLE</li>
-                <li>🪐 Vintage - Retro</li>
-                <li>📌 Buenos Aires, 🇦🇷</li>
-                <li>📍Zona Oeste, entregas a coordinar y envíos a todo el país.</li>
-            </ul>
+        
+        
         </div>
-        <div class="seccion">
-            <ul>
-                <li><a href=""><img src="./img/instagram-icon.svg" alt=""> Instagram</a></li>
-                <li><a href=""><img src="./img/whatsapp-icon.svg" alt=""> WhatsApp</a></li>
-                <li><a href=""><img src="./img/gmail-icon.svg" alt=""> Gmail</a></li>
-            </ul>
-        </div>
-    </footer>
+    
+    
+        
+    
+        <footer class="footer">
+            <div class="seccion">
+                <ul>
+                    <li>♻️ ROPA SUSTENTABLE</li>
+                    <li>🪐 Vintage - Retro</li>
+                    <li>📌 Buenos Aires, 🇦🇷</li>
+                    <li>📍Zona Oeste, entregas a coordinar y envíos a todo el país.</li>
+                </ul>
+            </div>
+            <div class="seccion">
+                <ul>
+                    <li><a href=""><img src="./img/instagram-icon.svg" alt=""> Instagram</a></li>
+                    <li><a href=""><img src="./img/whatsapp-icon.svg" alt=""> WhatsApp</a></li>
+                    <li><a href=""><img src="./img/gmail-icon.svg" alt=""> Gmail</a></li>
+                </ul>
+            </div>
+        </footer>
+    
+        
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="./js/index.js"></script>
 </body>

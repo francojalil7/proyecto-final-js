@@ -1,9 +1,20 @@
 .NavBar{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-around;
     font-size: 30px;
+    margin: 40px 10px;
+    
     h1{
-        font-size: 50px;
+        font-size: 60px;
     }
     ul{
         list-style: none;
+        display: flex;
+        flex-direction: row;
+        li{
+            margin: 20px;
+        }
     }
 }

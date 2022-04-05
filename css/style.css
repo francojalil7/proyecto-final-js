@@ -4,6 +4,19 @@
   box-sizing: border-box;
   font-family: 'Bebas Neue', cursive; }
 
+hr {
+  border: 2px solid khaki;
+  height: 2px;
+  background-color: darkkhaki;
+  width: 100%;
+  text-align: center; }
+
+a {
+  text-decoration: none;
+  color: black; }
+  a:hover {
+    color: chocolate; }
+
 .main {
   display: flex;
   flex-direction: row;
@@ -32,6 +45,24 @@
     font-size: 20px;
     margin: 5px;
     text-align: center; }
+  .divProductos .buttonProductos {
+    background-color: #dba767;
+    color: white;
+    padding: 25px;
+    margin: 20px;
+    font-size: 25px;
+    border-radius: 50px; }
+    .divProductos .buttonProductos:hover {
+      background-color: #e08b24; }
+  .divProductos .botonOcultar {
+    background-color: #a05d0a;
+    color: white;
+    padding: 25px;
+    margin: 20px;
+    font-size: 25px;
+    border-radius: 50px; }
+    .divProductos .botonOcultar:hover {
+      background-color: #925c19; }
   .divProductos button {
     font-size: 3vh;
     padding: 5px;
@@ -48,18 +79,23 @@
     font-size: 20px;
     padding: 10px; }
 
-.buttonProductos {
-  background-color: #dba767;
-  color: white;
-  padding: 25px;
-  margin: 20px;
-  font-size: 25px; }
-  .buttonProductos:hover {
-    background-color: #e08b24; }
-
 .carousel-inner img {
   max-width: 50vh;
   margin: 0 auto; }
+
+.devolucion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 22px; }
+  .devolucion h2 {
+    font-size: 50px;
+    text-align: center;
+    margin: 50px; }
+  .devolucion p {
+    padding: 20px;
+    margin-left: 400px;
+    margin-right: 400px; }
 
 .form {
   display: flex;
@@ -93,7 +129,7 @@
   flex-direction: column;
   align-items: center; }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .imgProductos {
     margin: 0; }
   .divProductos {
@@ -114,7 +150,11 @@
     .submit-div input {
       padding: 10px 30px; }
   .vista .buttonProductos {
-    margin-top: 40px; } }
+    margin-top: 40px; }
+  .devolucion p {
+    padding: 10px;
+    margin-left: 30px;
+    margin-right: 30px; } }
 
 .footer {
   display: flex;
@@ -162,8 +202,17 @@
         flex-wrap: wrap; } }
 
 .NavBar {
-  font-size: 30px; }
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-around;
+  font-size: 30px;
+  margin: 40px 10px; }
   .NavBar h1 {
-    font-size: 50px; }
+    font-size: 60px; }
   .NavBar ul {
-    list-style: none; }
+    list-style: none;
+    display: flex;
+    flex-direction: row; }
+    .NavBar ul li {
+      margin: 20px; }
